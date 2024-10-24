@@ -21,5 +21,5 @@ RUN chmod +x .git/hooks/pre-commit
 
 EXPOSE 8080
 
-# CMD code-server -w "$(echo Hello, $REG_NO)" -an $REG_NO 
+# CMD code-server -w "$(echo Hello, $REG_NO)" -an $REG_NO  
 CMD code-server -w "$(echo "Hello, $REG_NO")" -an "$REG_NO" .
